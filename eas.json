@@ -1,0 +1,33 @@
+{
+  "cli": {
+    "version": ">= 18.5.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal"
+    },
+    "production": {
+      "autoIncrement": true,
+      "env": {
+        "EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY": "pk_test_ZGVzdGluZWQtc3RhcmZpc2gtNDUuY2xlcmsuYWNjb3VudHMuZGV2JA",
+        "EXPO_PUBLIC_CLERK_GOOGLE_WEB_CLIENT_ID": "275151264773-7k21krtqrm79532cnp3a8sv01lleui9g.apps.googleusercontent.com",
+        "EXPO_PUBLIC_CLERK_GOOGLE_ANDROID_CLIENT_ID": "275151264773-a57dh6n6jvmcikehrubhh6mn6ndre09b.apps.googleusercontent.com",
+        "EXPO_PUBLIC_API_URL": "https://trade-diary-backend-bfq5.onrender.com/api"
+      }
+    },
+    "production-apk": {
+      "extends": "production",
+      "android": {
+        "buildType": "apk"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}

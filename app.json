@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "Trade-diary",
-    "slug": "Trade-diary",
+    "name": "Trade Note",
+    "slug": "tradenote",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "tradediary",
+    "scheme": "tradenote",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
@@ -19,7 +19,8 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.nitish95087.Tradenote"
     },
     "web": {
       "output": "static",
@@ -30,19 +31,38 @@
       [
         "expo-splash-screen",
         {
+          "backgroundColor": "#227bfd",
           "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff",
+          "imageWidth": 350,
           "dark": {
-            "backgroundColor": "#000000"
+            "backgroundColor": "#227bfd",
+            "image": "./assets/images/splash-icon.png"
           }
+        }
+      ],
+      "@react-native-community/datetimepicker",
+      "@clerk/expo",
+      "expo-secure-store",
+      "expo-web-browser",
+      [
+        "@react-native-google-signin/google-signin",
+        {
+          "iosUrlScheme": "com.googleusercontent.apps.your_ios_client_id"
         }
       ]
     ],
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY": "pk_test_ZGVzdGluZWQtc3RhcmZpc2gtNDUuY2xlcmsuYWNjb3VudHMuZGV2JA",
+      "EXPO_PUBLIC_CLERK_GOOGLE_WEB_CLIENT_ID": "275151264773-7k21krtqrm79532cnp3a8sv01lleui9g.apps.googleusercontent.com",
+      "EXPO_PUBLIC_CLERK_GOOGLE_ANDROID_CLIENT_ID": "275151264773-a57dh6n6jvmcikehrubhh6mn6ndre09b.apps.googleusercontent.com",
+      "eas": {
+        "projectId": "c9fa4c7b-61ef-49b4-a69c-1cbe9dfd24d6"
+      }
     }
   }
 }

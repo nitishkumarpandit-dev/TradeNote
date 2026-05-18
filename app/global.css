@@ -1,0 +1,25 @@
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css";
+
+@import "nativewind/theme";
+
+@theme {
+  --color-background: #10141a;
+  --color-card: #1c2026;
+  --color-card-secondary: #262a31;
+  --color-primary: #4d8eff;
+  --color-success: #01c896;
+  --color-danger: #ff5451;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #c2c6d6;
+
+  --radius-2xl: 1rem;
+  --radius-xl: 0.75rem;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-text-primary;
+  }
+}
