@@ -90,10 +90,15 @@ To run this project locally, follow these steps:
    ```
 
 3. **Environment Variables**:
-   Create a `.env` or `.env.local` file in the root directory and add the necessary environment variables (e.g., Clerk Publishable Key).
+   Create a `.env` or `.env.local` file in the root directory and add the necessary environment variables. You can use `.env.example` as a reference:
    ```env
-   EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_key
-   EXPO_PUBLIC_CLERK_GOOGLE_WEB_CLIENT_ID=your_google_client_id
+   EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+   EXPO_PUBLIC_CLERK_GOOGLE_WEB_CLIENT_ID=your_google_web_client_id
+   EXPO_PUBLIC_CLERK_GOOGLE_ANDROID_CLIENT_ID=your_google_android_client_id
+   EXPO_PUBLIC_API_URL=your_api_url
+   EXPO_PUBLIC_CLERK_GOOGLE_IOS_CLIENT_ID=your_google_ios_client_id
+   EXPO_PUBLIC_CLERK_GOOGLE_IOS_URL_SCHEME=your_google_ios_url_scheme
+   EXPO_PUBLIC_SENTRY_DSN=your_sentry_dsn
    ```
 
 4. **Start the development server**:
