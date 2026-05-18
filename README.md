@@ -48,7 +48,7 @@ This project leverages a cutting-edge frontend stack optimized for performance, 
 The codebase follows a scalable, feature-first architecture to ensure clean separation of concerns:
 
 ```text
-trade-note-mobile/frontend/
+TradeNote/
 ├── app/                  # Expo Router file-based navigation (Auth & App layouts)
 ├── assets/               # Static assets (images, fonts)
 ├── components/           # Reusable UI building blocks organized by feature
@@ -81,7 +81,7 @@ To run this project locally, follow these steps:
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/nitishkumarpandit-dev/TradeNote.git
-   cd TradeNote/frontend
+   cd TradeNote
    ```
 
 2. **Install dependencies**:
