@@ -78,10 +78,10 @@ To run this project locally, follow these steps:
 
 ### Installation
 
-1. **Clone the repository** (if applicable):
+1. **Clone the repository**:
    ```bash
-   git clone <repository-url>
-   cd trade-note-mobile/frontend
+   git clone https://github.com/nitishkumarpandit-dev/TradeNote.git
+   cd TradeNote/frontend
    ```
 
 2. **Install dependencies**:
